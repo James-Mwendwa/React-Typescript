@@ -1,4 +1,4 @@
-// import { Login } from "./Login";
+import { Login } from "./Login";
 import { ProfileProps } from "./Profile";
 
 type PrivateProps = {
@@ -10,6 +10,6 @@ export const Private = ({ isLoggedIn, component: Component }: PrivateProps) => {
   if (isLoggedIn) {
     return <Component name="James" />;
   } else {
-    // return <Login />;
+    return <Login />;
   }
 };
